@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Website para ajudar os desenvolvedores front-end" name="description" />
+
+  <!-- logo -->
+  <link href="/assets/logo.png" rel="icon" />
+  <link href="/assets/logo.png" rel="apple-touch-icon" />
+
+  <!-- links -->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link href="style.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&family=Poppins:wght@100;400;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- title -->
+  <title>Podpah - Site não oficial</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header id="header" class="styles_section__header">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <!-- nome -->
+      <a href="#" class="styles_header__logo">
+        <img src="/assets/logo.png" width="50px" />
+        <span>Podpah</span>
+      </a>
+
+      <!-- header navbar -->
+      <nav id="navbar" class="styles__navbar">
+
+        <ul>
+          <li><a class="scrollto active" href="#">Início</a></li>
+          <li><a class="scrollto" href="#section__eps">Episódios</a></li>
+          <li><a class="scrollto" href="#section__about">Sobre</a></li>
+          
+          <div class="styles_slogan__navbar"> 
+            <p>O podcast mais zika da internet<strong style="color:var(--primary)">.</strong></p> 
+          </div>
+
+        </ul>
+
+        <i class='bx bx-menu-alt-right styles_mobileToggle__navbar'></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section id="section__hero" class="styles_section__home">
+    <div class="styles_home__container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
+
+          <div class="styles_title__home">
+            <svg data-aos="fade-up" id="emoji" viewBox="0 0 72 72" width="100" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="color"><path fill="#3F3F3F" d="M48.11,28.5397l-4.38,4.39l-4.35,4.35l-5.81,5.47c0,0-1.2755,1.3938-3.19,1.92 c-1.9145,0.5262-4.79-0.15-6.5699-1.92l-3.58-3.58c-2.77-2.78-2.77-7.32,0-10.1l4.31-4.3l5.51-5.5099l4.39-4.39 c2.78-2.78,7.3199-2.78,10.09,0l0.6,0.6l2.98,2.98C50.89,21.2197,50.89,25.7697,48.11,28.5397z"/><path fill="#9B9B9A" d="M43.8321,24.2619c0,0-3.4544,3.4623-4.3799,4.39c-0.9256,0.9277-4.35,2.4561-5.2784,3.3301 c-0.9283,0.874-3.2698,5.1874-4.8817,6.4899c-1.6118,1.3025-1.0722,1.4146-3.19,1.92s-4.79-0.15-6.57-1.92l-0.6-0.6 c-2.77-2.78-2.77-7.32,0-10.1l4.31-4.3l5.51-5.5099l4.39-4.39c2.78-2.78,7.3199-2.78,10.09,0l0.6,0.6 C46.6121,16.9519,46.6121,21.4918,43.8321,24.2619z"/><rect x="21.9021" y="54.6877" width="27.8432" height="5.2972" fill="#D0CFCE"/><rect x="47.051" y="54.6877" width="2.6943" height="5.2972" fill="#3F3F3F"/><path fill="#9B9B9A" d="M36.3643,30.5947l-0.5432-1.3615c-0.6895,0-2.2504,0.9225-2.2504,1.6119v24.092 c0,0.0001,2.9293-0.2495,2.9293-0.2495L36.3643,30.5947z"/><path fill="#3F3F3F" d="M38.1196,54.6877l-0.2185-23.8192c0-0.6894-0.8474-1.0591-1.5368-1.0591L36.5,54.6877 C36.5,54.6877,38.1196,54.6878,38.1196,54.6877z"/><path fill="#D0CFCE" d="M32.4199,28.0879c-0.2558,0-0.5117-0.0977-0.707-0.293l-7.5977-7.5971 c-0.3906-0.3907-0.3906-1.0235,0-1.4141c0.0187-0.0186,0.0435-0.0251,0.0632-0.0419l-0.0261-0.0264 c0,0-0.3883,0.3664-0.7789,0.7571c-0.3907,0.3906-0.3907,1.0234,0,1.414l7.4951,7.5705c0.1953,0.1953,0.4511,0.2929,0.707,0.2929 s0.5117-0.0976,0.707-0.2929c0.2255-0.2258,0.462-0.403,0.6302-0.5197C32.7584,28.0265,32.5929,28.0879,32.4199,28.0879z"/><path fill="#D0CFCE" d="M41.0273,35.6579l-1.2024,1.1804c-0.0477,0.3048,0.0283,0.6249,0.2632,0.8599l0.6086,0.5919 c0.1953,0.1963,0.4511,0.2939,0.708,0.2939c0.2549,0,0.5107-0.0966,0.706-0.2919c0.3906-0.3897,0.822-0.7921,0.822-0.7921 L41.0273,35.6579L41.0273,35.6579z"/></g><g id="hair"/><g id="skin"/><g id="skin-shadow"/><g id="line"><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M29.3922,18.5962l4.3865-4.3865c2.7764-2.7764,7.3196-2.7764,10.096,0l3.5778,3.5778c2.7764,2.7765,2.7764,7.3197,0,10.0961 L43.0661,32.27"/><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M29.7195,44.009c-2.2958,0.4945-4.7929-0.1458-6.5678-1.9207l-3.5778-3.5778c-2.7764-2.7764-2.7764-7.3196,0-10.096l4.3033-4.3033"/><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M33.5707,54.6877V31.8448c0-1.2429,1.0075-2.2505,2.2504-2.2505h0.543c1.2429,0,2.2504,1.0076,2.2504,2.2505v22.8429"/><rect x="22.4399" y="54.6877" width="27.3054" height="5.2972" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line x1="20.9962" x2="18.5728" y1="40.4989" y2="42.9681" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line x1="41.6359" x2="42.1701" y1="36.304" y2="36.8383" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line x1="24.8226" x2="32.4197" y1="19.4908" y2="27.0879" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></g></svg>     
+            <span data-aos="fade-down">O podcast mais <br/>zika da internet</span>
+          </div>
+
+          <h2 data-aos="fade-right">
+            Um podcast incrível, que representa todas as pessoas. Criado e apresentado 
+            pelos gordões mais amados do nosso Brasil, Igão cabeça de nós todos e 
+            Mítico, o fabuloso.
+          </h2>
+          <div>
+
+            <div class="styles_buttons__hero" data-aos="zoom-in">
+              <a class="styles_button__h12L" href="https://www.youtube.com/c/Podpah" target="_blank">
+                <span>Assistir agora</span>
+              </a>
+
+              <a href="#section__eps" class="styles_button__rM1 scrollto">
+                <span>
+                  Saiba mais <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M18 12h-5V6h-2v6H6l6 7z"></path>
+                  </svg>
+                </span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="styles_img__hero" data-aos="zoom-in">
+          <img src="/assets/gordoes.jpg" width="70%" />
+        </div>
+
+        
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <main id="main">
+
+    <section id="section__eps" class="styles_section__eps">
+
+        <div class="styles_section__title" data-aos="fade-left">
+          <h1>Episódios</h1>
+          <p>Os episódios mais assistidos</p>
+        </div>
+
+        <div class="styles_eps__row" data-aos="zoom-in">
+
+          <!-- kevin -->
+          <div class="styles_eps__column">
+          <div class="styles_eps__box">
+
+            <div class="styles_eps__thumb">
+              <img width="100%" src="http://i3.ytimg.com/vi/iu34ZfpTKv4/maxresdefault.jpg" />
+            </div>
+
+            <a class="styles_eps__title" href="https://www.youtube.com/watch?v=iu34ZfpTKv4" target="_blank">MC KEVIN - Podpah #76</a>
+            <hr />
+
+            <p class="styles_eps__subtitle">12M Visualizações - 8 meses atrás</p>
+            <hr />
+
+            <div class="styles_eps__desc">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 8h-5.612l1.123-3.367c.202-.608.1-1.282-.275-1.802S14.253 2 13.612 2H12c-.297 0-.578.132-.769.36L6.531 8H4c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h13.307a2.01 2.01 0 0 0 1.873-1.298l2.757-7.351A1 1 0 0 0 22 12v-2c0-1.103-.897-2-2-2zM4 10h2v9H4v-9zm16 1.819L17.307 19H8V9.362L12.468 4h1.146l-1.562 4.683A.998.998 0 0 0 13 10h7v1.819z"></path></svg> 518K</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H6.693A2.01 2.01 0 0 0 4.82 4.298l-2.757 7.351A1 1 0 0 0 2 12v2c0 1.103.897 2 2 2h5.612L8.49 19.367a2.004 2.004 0 0 0 .274 1.802c.376.52.982.831 1.624.831H12c.297 0 .578-.132.769-.36l4.7-5.64H20c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-8.469 17h-1.145l1.562-4.684A1 1 0 0 0 11 14H4v-1.819L6.693 5H16v9.638L11.531 20zM18 14V5h2l.001 9H18z"></path></svg> 0</span>
+            </div>
+
+            <a class="styles_eps__button" href="https://www.youtube.com/watch?v=iu34ZfpTKv4" target="_blank">
+              <span>Assistir</span>
+            </a>
+
+          </div>
+        </div>
+
+          <!-- cocielo -->
+          <div class="styles_eps__column">
+          <div class="styles_eps__box">
+
+            <div class="styles_eps__thumb">
+              <img width="100%" src="http://i3.ytimg.com/vi/v9DAcxkqi6U/maxresdefault.jpg" />
+            </div>
+
+            <a class="styles_eps__title" href="https://www.youtube.com/watch?v=v9DAcxkqi6U" target="_blank">JÚLIO COCIELO - Podpah #31</a>
+            <hr />
+
+            <p class="styles_eps__subtitle">9.6M Visualizações - 10 meses atrás</p>
+            <hr />
+
+            <div class="styles_eps__desc">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 8h-5.612l1.123-3.367c.202-.608.1-1.282-.275-1.802S14.253 2 13.612 2H12c-.297 0-.578.132-.769.36L6.531 8H4c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h13.307a2.01 2.01 0 0 0 1.873-1.298l2.757-7.351A1 1 0 0 0 22 12v-2c0-1.103-.897-2-2-2zM4 10h2v9H4v-9zm16 1.819L17.307 19H8V9.362L12.468 4h1.146l-1.562 4.683A.998.998 0 0 0 13 10h7v1.819z"></path></svg> 436K</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H6.693A2.01 2.01 0 0 0 4.82 4.298l-2.757 7.351A1 1 0 0 0 2 12v2c0 1.103.897 2 2 2h5.612L8.49 19.367a2.004 2.004 0 0 0 .274 1.802c.376.52.982.831 1.624.831H12c.297 0 .578-.132.769-.36l4.7-5.64H20c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-8.469 17h-1.145l1.562-4.684A1 1 0 0 0 11 14H4v-1.819L6.693 5H16v9.638L11.531 20zM18 14V5h2l.001 9H18z"></path></svg> 0</span>
+            </div>
+
+            <a class="styles_eps__button" href="https://www.youtube.com/watch?v=v9DAcxkqi6U" target="_blank">
+              <span>Assistir</span>
+            </a>
+
+
+          </div>
+          </div>
+
+          <!-- sidoka -->
+          <div class="styles_eps__column">
+          <div class="styles_eps__box">
+
+            <div class="styles_eps__thumb">
+              <img width="100%" src="http://i3.ytimg.com/vi/_JEJljSlhPg/maxresdefault.jpg" />
+            </div>
+
+            <a class="styles_eps__title" href="https://www.youtube.com/watch?v=_JEJljSlhPg" target="_blank">SIDOKA - Podpah #214</a>
+            <hr />
+
+            <p class="styles_eps__subtitle">9.6M Visualizações - 2 meses atrás</p>
+            <hr />
+
+            <div class="styles_eps__desc">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 8h-5.612l1.123-3.367c.202-.608.1-1.282-.275-1.802S14.253 2 13.612 2H12c-.297 0-.578.132-.769.36L6.531 8H4c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h13.307a2.01 2.01 0 0 0 1.873-1.298l2.757-7.351A1 1 0 0 0 22 12v-2c0-1.103-.897-2-2-2zM4 10h2v9H4v-9zm16 1.819L17.307 19H8V9.362L12.468 4h1.146l-1.562 4.683A.998.998 0 0 0 13 10h7v1.819z"></path></svg> 607K</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H6.693A2.01 2.01 0 0 0 4.82 4.298l-2.757 7.351A1 1 0 0 0 2 12v2c0 1.103.897 2 2 2h5.612L8.49 19.367a2.004 2.004 0 0 0 .274 1.802c.376.52.982.831 1.624.831H12c.297 0 .578-.132.769-.36l4.7-5.64H20c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-8.469 17h-1.145l1.562-4.684A1 1 0 0 0 11 14H4v-1.819L6.693 5H16v9.638L11.531 20zM18 14V5h2l.001 9H18z"></path></svg> 0</span>
+            </div>
+
+            <a class="styles_eps__button" href="https://www.youtube.com/watch?v=_JEJljSlhPg" target="_blank">
+              <span>Assistir</span>
+            </a>
+
+
+          </div>
+          </div>
+
+          <!-- da cunha -->
+          <div class="styles_eps__column">
+          <div class="styles_eps__box">
+
+            <div class="styles_eps__thumb">
+              <img width="100%" src="http://i3.ytimg.com/vi/tcEd033pz7Q/maxresdefault.jpg" />
+            </div>
+
+            <a class="styles_eps__title" href="https://www.youtube.com/watch?v=tcEd033pz7Q" target="_blank">D. DA CUNHA - Podpah #41</a>
+            <hr />
+
+            <p class="styles_eps__subtitle">9.2M Visualizações - 9 meses atrás</p>
+            <hr />
+
+            <div class="styles_eps__desc">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 8h-5.612l1.123-3.367c.202-.608.1-1.282-.275-1.802S14.253 2 13.612 2H12c-.297 0-.578.132-.769.36L6.531 8H4c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h13.307a2.01 2.01 0 0 0 1.873-1.298l2.757-7.351A1 1 0 0 0 22 12v-2c0-1.103-.897-2-2-2zM4 10h2v9H4v-9zm16 1.819L17.307 19H8V9.362L12.468 4h1.146l-1.562 4.683A.998.998 0 0 0 13 10h7v1.819z"></path></svg> 559K</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H6.693A2.01 2.01 0 0 0 4.82 4.298l-2.757 7.351A1 1 0 0 0 2 12v2c0 1.103.897 2 2 2h5.612L8.49 19.367a2.004 2.004 0 0 0 .274 1.802c.376.52.982.831 1.624.831H12c.297 0 .578-.132.769-.36l4.7-5.64H20c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-8.469 17h-1.145l1.562-4.684A1 1 0 0 0 11 14H4v-1.819L6.693 5H16v9.638L11.531 20zM18 14V5h2l.001 9H18z"></path></svg> 0</span>
+            </div>
+
+            <a class="styles_eps__button" href="https://www.youtube.com/watch?v=tcEd033pz7Q" target="_blank">
+              <span>Assistir</span>
+            </a>
+
+
+          </div>
+          </div>
+         
+          <!-- deolane -->
+          <div class="styles_eps__column">
+          <div class="styles_eps__box">
+
+            <div class="styles_eps__thumb">
+              <img width="100%" src="http://i3.ytimg.com/vi/ri9ZJPUKNBY/maxresdefault.jpg" />
+            </div>
+
+            <a class="styles_eps__title" href="https://www.youtube.com/watch?v=ri9ZJPUKNBY" target="_blank">DRA. DEOLANE - Podpah #184</a>
+            <hr />
+
+            <p class="styles_eps__subtitle">8.9M Visualizações - 3 meses atrás</p>
+            <hr />
+
+            <div class="styles_eps__desc">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 8h-5.612l1.123-3.367c.202-.608.1-1.282-.275-1.802S14.253 2 13.612 2H12c-.297 0-.578.132-.769.36L6.531 8H4c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h13.307a2.01 2.01 0 0 0 1.873-1.298l2.757-7.351A1 1 0 0 0 22 12v-2c0-1.103-.897-2-2-2zM4 10h2v9H4v-9zm16 1.819L17.307 19H8V9.362L12.468 4h1.146l-1.562 4.683A.998.998 0 0 0 13 10h7v1.819z"></path></svg> 446K</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H6.693A2.01 2.01 0 0 0 4.82 4.298l-2.757 7.351A1 1 0 0 0 2 12v2c0 1.103.897 2 2 2h5.612L8.49 19.367a2.004 2.004 0 0 0 .274 1.802c.376.52.982.831 1.624.831H12c.297 0 .578-.132.769-.36l4.7-5.64H20c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-8.469 17h-1.145l1.562-4.684A1 1 0 0 0 11 14H4v-1.819L6.693 5H16v9.638L11.531 20zM18 14V5h2l.001 9H18z"></path></svg> 0</span>
+            </div>
+
+            <a class="styles_eps__button" href="https://www.youtube.com/watch?v=ri9ZJPUKNBY" target="_blank">
+              <span>Assistir</span>
+            </a>
+
+
+          </div>
+          </div>
+       
+       
+          <!-- ventura -->
+          <div class="styles_eps__column">
+          <div class="styles_eps__box">
+
+            <div class="styles_eps__thumb">
+              <img width="100%" src="http://i3.ytimg.com/vi/989cR-2KTqE/maxresdefault.jpg" />
+            </div>
+
+            <a class="styles_eps__title" href="https://www.youtube.com/watch?v=989cR-2KTqE" target="_blank">THIAGO VENTURA - Podpah #12</a>
+            <hr />
+
+            <p class="styles_eps__subtitle">6.5M Visualizações - 1 ano atrás</p>
+            <hr />
+
+            <div class="styles_eps__desc">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 8h-5.612l1.123-3.367c.202-.608.1-1.282-.275-1.802S14.253 2 13.612 2H12c-.297 0-.578.132-.769.36L6.531 8H4c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h13.307a2.01 2.01 0 0 0 1.873-1.298l2.757-7.351A1 1 0 0 0 22 12v-2c0-1.103-.897-2-2-2zM4 10h2v9H4v-9zm16 1.819L17.307 19H8V9.362L12.468 4h1.146l-1.562 4.683A.998.998 0 0 0 13 10h7v1.819z"></path></svg> 354K</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H6.693A2.01 2.01 0 0 0 4.82 4.298l-2.757 7.351A1 1 0 0 0 2 12v2c0 1.103.897 2 2 2h5.612L8.49 19.367a2.004 2.004 0 0 0 .274 1.802c.376.52.982.831 1.624.831H12c.297 0 .578-.132.769-.36l4.7-5.64H20c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-8.469 17h-1.145l1.562-4.684A1 1 0 0 0 11 14H4v-1.819L6.693 5H16v9.638L11.531 20zM18 14V5h2l.001 9H18z"></path></svg> 0</span>
+            </div>
+
+            <a class="styles_eps__button" href="https://www.youtube.com/watch?v=989cR-2KTqE" target="_blank">
+              <span>Assistir</span>
+            </a>
+
+          </div>
+      
+        </div>
+        </div>
+
+        <div class="styles_eps__buttonContainer">
+          <a class="styles_eps__buttonMore" href="https://www.youtube.com/c/Podpah/videos" target="_blank">
+            <span>Ver todos</span>
+          </a>
+        </div>
+
+    </section>
+
+    <!-- about -->
+    <section id="section__about" class="styles_section__about">
+      <div class="container">
+        
+        <div class="styles_section__title">
+          <h1>Sobre</h1>
+          <p>Um pouco sobre os gordões</p>
+        </div>
+
+        <div class="row">
+
+          <div class="styles_imgLContainer__about" data-aos="fade-right">
+            <img src="/assets/igao.jpg" class="styles_imgL__about">
+          </div>
+
+          <div class="styles_textRContainer" data-aos="fade-left">
+
+            <h3 class="styles_title__about">Igão</h3>
+            <p class="styles_subtitle__about">Criador &amp; Apresentador</p>
+
+
+            <div class="styles_description__about igao">
+              <p class="styles_description__text">
+                Igor Cavalari, ou Igão, nasceu em Osasco (SP), no dia 18 de Julho de 1996.
+                Começou sua história no YouTube, oficialmente, em Julho de 2015. Corinthiano 
+                de coração, funkeiro e trapper. Antes do YouTube, trabalhou no Mc Donalds por
+                um bom tempo.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="styles_imgLContainer__about" data-aos="fade-right">
+            <img src="/assets/mitico.jpg" class="styles_imgL__about">
+          </div>
+
+          <div class="styles_textRContainer" data-aos="fade-left">
+
+            
+            <h3 class="styles_title__about">Mítico</h3>
+            <p class="styles_subtitle__about">Criador &amp; Apresentador</p>
+
+            
+            <div class="styles_description__about mitico">
+              <p class="styles_description__text">
+                Thiago Marques, ou Mítico, nasceu no Espírito Santo, no dia 26 de Junho de 1990.
+                Seu canal no YouTube foi criado em Janeiro de 2014. Um super fã de Dragon Ball Z.
+                E, por mais inimaginável que pareça, ele fez faculdade de Pedagogia.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="styles_section__title" data-aos="fade-left">
+          <p>Agora, um pouco sobre o Podpah</p>
+        </div>
+
+        <div class="row" data-aos="fade-right">
+
+          <div class="styles_column__about">
+            <div class="styles_item__about">
+              <h4>Como surgiu?</h4>
+              <p>O projeto nasceu em 2020 nos estúdios do Flow e ganhou vida própria. Segundo Igão, a inspiração em Joe Rogan é verdadeira, mas o objetivo era fazer algo com “o linguajar da quebrada”.</p>
+            </div>
+
+            <div class="styles_item__about">
+              <h4>Onde posso ver?</h4>
+              <p>Os episódios, normalmente, acontecem todos os dias da semana, exceto sábados e domingos (<strong>só em casos especiais</strong>)</p>
+              <p>Lives acontecem no YouTube e na Twitch (simultaneamente). Mas, caso você perca a live, você pode ver ela a qualquer momento, pois elas ficam salvas no canal! Além de poder ver os cortes.</p>
+            </div>
+          </div>
+          
+
+          <div class="styles_column__about">
+            <div class="styles_item__about">
+              <h4>Onde posso seguir o Podpah?</h4>
+              <p>Atualmente, possuímos três redes sociais que você pode nos seguir. Sendo no Instagram, Twitter e o principal, YouTube!</p>
+            </div>
+
+            <div class="styles_item__about">
+              <h4>É apenas uma conversa?</h4>
+              <p>Sim e não. São conversas, mas não uma conversa comum. O ar é de entrevista, mas não quadrado à nível entrevista de emprego. Como uma conversa de bar.</p>
+              <p>Ah, e não podemos esquecer dos eventos incríveis realizados pelo Podpah! Tais como o 24 horas, Arraiá e 100 anos do Guaraná Antarctica.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+
+    <!-- footer -->
+    <footer id="section__footer" class="styles_section__footer">
+      <div class="styles_top__footer">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-5 col-md-6">
+              <div class="styles_info__footer">
+                <a href="/components/views/index.html" class="styles_logo__footer d-flex align-items-center">
+                  <img src="/assets/logo.png" width="50px" />
+
+                  <span data-aos="fade-left"><strong style="color:var(--primary);">
+                      </strong>Podpah</strong>
+                  </span>
+                </a>
+
+                <div class="styles_slogan__footer" data-aos="fade-up">
+                  <p>O podcast mais zika da internet.</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div data-aos="fade-up" class="col-lg-4 col-md-6 styles_links__footer">
+              <h4>Navegue</h4>
+              <ul>
+                <li><a href="#section__about">Sobre nós</a></li>
+                <li><a href="#section__eps">Episódios</a></li>
+              </ul>
+            </div>
+
+            <div data-aos="fade-up" class="col-lg-3 col-md-6 styles_links__footer">
+              <h4>Mídias/Contato</h4>
+              <ul>
+                <li><a href="https://www.youtube.com/c/podpah" target="_blank">YouTube</a></li>
+                <li><a href="https://twitter.com/podpahpodcast" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/podpahpodcast/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/podpahpodcast/" target="_blank">Facebook</a></li>
+              </ul>
+            </div>
+
+            <div data-aos="fade-up" class="styles_back__footer">
+              <a href="#section__hero"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                  <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path>
+                </svg></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- imports js -->
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
